@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style>
+@import url(css/style.css);
+@import url(css/styles/tomorrow-night.css);
+/*@import url(css/bootstrap.css);*/
+@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i);
+</style>
+<script src="js/plotly-latest.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+<body>
+
+<section style="text-align:center;padding-top:3em;">
+  <h3 style="text-align:center;">Exploratory Analysis with
+     D3.js, <br> Redux, and Jupyter.</h3>
+  <br>
+  
+  <!-- <p>What can we learn <br>from Google's open-source ML library? -->
+  <p> Monte Lunacek <br>
+    <small><strong>Computational Science Center</strong></small>
+</section>
+
+
+<section style="padding: 1em 3em;">
+  <h3 style="text-align:center;">What is Deep Learning?</h3>
+
+
+  <p> Larger, more connected neural networks.
+  <p> Collection of connected nodes
+  <br>Each implementing a math function of the form
+    $$y = g(x \cdot W + b)$$
+  <br>The composition of thousands of these nodes is very powerful.
+  <p><small><a href="http://www.slideshare.net/JenAman/large-scale-deep-learning-with-tensorflow">Jeff Dean's talk</a></small>
+
+</section>
+
+<section style="padding: 2em 3em;">
+  <h2 style="text-align:center;">Tensor + Flow</h2>
+
+  <p><b>Tensors</b> multi-dimensional arrays
+  <br>Compuation represented as a graph
+  <br>The nodes are operations
+  <br>The tensors (edges) flows thought the operations
+</section>
+
+
+<section class="whitebg">
+  <iframe src="notebooks/00_introduction.html"></iframe>
+</section>
+
+<section style="padding: 2em 3em;">
+  <h2 style="text-align:center;">Last slide</h2>
+</section>
+
+
+
+<script src="js/d3.v3.min.js"></script>
+<script src="js/stack.v1.js"></script>
+<script type="text/javascript" src="js/highlight.min.js"> </script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+var mystack = stack();
+</script>
+
+</body>
+</html>
